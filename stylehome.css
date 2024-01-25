@@ -1,0 +1,127 @@
+#heading{
+color: #E1F2F1;
+font-family: Inter;
+font-size: 35px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
+
+.headingdiv{
+display:flex;
+width: 475px;
+height: 166px;
+flex-shrink: 0;
+margin: auto;
+margin-top: 193px;
+margin-bottom:473px ;
+margin-left: 800px;
+margin-right: 57px;
+flex-direction: column;
+
+
+
+
+}
+
+#buttonbuy{
+    padding: 9px 16px 9px 16px;
+    margin-right: 35px;
+    border-radius: 6px;
+    background-color:#E6D2C2; 
+    border-color: #E6D2C2;
+
+}
+#buttonsell{
+    padding: 9px 16px 9px 16px;
+    border-radius: 6px;
+    background-color:#E6D2C2; 
+    border-color: #E6D2C2;
+}
+
+.footer{
+    display:flex;
+    justify-content:center;
+    justify-content: space-evenly;
+    background-color: #F9EFDB;
+}
+.list{
+    font-weight: bold;
+    color: grey;
+    
+}
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+#menulist{
+    display:flex ;
+    
+  
+    color: #FFF;
+    font-family: Poppins;
+font-size: 17px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+padding: 0px 90px;
+
+
+
+}
+
+
+.flex{
+    display: flex;
+}
+
+nav ul li{
+    padding: 0 25px;
+
+}
+.right{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+    justify-content: flex-end;
+   
+}
+#cart{
+
+    margin-top: 13px;
+    padding-right:50px;
+
+}
+.likes{
+    margin-left:auto;
+    margin-top: 13px;
+
+}
+.center{
+    margin-right: 50px;
+}
+
+.search{
+    
+    display: flex;
+    justify-content:space-between ;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+    background-color:#E6D2C2;
+
+}
+.searchbox{
+    background-color:#E6D2C2;
+    border: none;
+   
+}
+#searchicon{
+    mix-blend-mode: color-burn;
+   
+}
+
