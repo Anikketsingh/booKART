@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>booKART-used books at lowest price</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@200&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f4ff;
+    box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1156px;
+  margin: auto;
+}
+  
+  .inter-navbar {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font: weight 500px;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+  }
+  
+  .navbar {
+    display: flex;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  }
+  .logoleft {
+    width: 10.9375rem;
+    height: 3.4375rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    background: #683ee6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10.9375rem;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #683ee6;
+  border-radius: 3.125rem;
+  }
+  .logoleft :first-child {
+    width: 6.20594rem;
+    height: 1.18119rem;
+    background-color: #683ee6;
+  }
+  .img2 {
+    width: 1.11019rem;
+    height: 1.63238rem;
+    background-color: #683ee6;
+    width: 1.11019rem;
+  height: 1.63238rem;
+  background-color: #683ee6;
+
+  }
+  .rightcon {
+    display: flex;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 18px;
+    padding-left: 45rem;
+    list-style: none;
+  display: flex;
+  gap: 18px;
+  }
+  ul li a {
+    color: var(--Neutral-D_Grey, #4d4d4d);
+    text-align: center;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 0.84125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.26188rem;
+  }
+  .btn1 {
+    display: flex;
+    padding: 0.73613rem 1.6825rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.42063rem;
+    border-radius: 0.21031rem;
+    background: #683ee6;
+    color: var(--Neutral-White, #fff);
+    text-align: center;
+    border: none;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem; /* 150% */
+  }
+  .arrow {
+    background-color: #683ee6;
+  }
+  @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .btn1 {
+    margin-top: 1rem;
+  }
+
+  .home {
+    margin-top: 60px;
+  }
+
+  .bookscat1 {
+    margin-top: 60px;
+  }
+
+ 
+  .contact {
+    margin-top: 60px;
+  }
+}
+  .home {
+    width: 1156px;
+    height: 738px;
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    align-items: center;
+    background: url("public/images/d-43-dcd-6-a-364-db-959006-e-3-bb-8-df-27-a-5762.png"),
+      rgba(211, 211, 211, 0) 50% / cover no-repeat;
+  }
+  .dis {
+    background: transparent;
+    margin: auto;
+  }
+  .discover {
+    width: 371px;
+    height: 104px;
+    border-radius: 20px;
+    background: rgba(146, 125, 250, 0.7);
+    margin: auto;
+  }
+  .discover h1 {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    padding-top: 28px;
+    font-family: Inter;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 20.19px; /* 28.843% */
+  }
+  .discover p {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20.19px; /* 100.951% */
+    padding-top: 25px;
+  }
+  .btn2 {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background: rgba(56, 29, 191, 0.9);
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.19px; /* 67.301% */
+    margin-left: 125px;
+    margin-top: 15px;
+  }
+  .bookscat {
+    display: flex;
+    width: 100vw;
+    height: 350px;
+    flex-shrink: 0;
+    background-color: rgba(56, 29, 191, 0.9);
+    align-items: center;
+    gap: 85px;
+  }
+  .bookscat h1 {
+    background: transparent;
+  }
+  .concat img {
+    border-radius: 5px;
+    background: transparent;
+  }
+  .concat p {
+    text-align: center;
+    background: transparent;
+    margin-top: 15px;
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20.19px; /* 84.126% */
+  }
+  .concat {
+    margin: auto;
+    width: 245px;
+    height: 220px;
+    flex-shrink: 0;
+    text-align: center;
+    background-color: rgba(56, 29, 191, 0.9);
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20.19px; /* 84.126% */
+  }
+  .bookscat1 {
+    background-color: rgba(56, 29, 191);
+    margin-top: 85px;
+  }
+  .bookscat1 h1 {
+    background: transparent;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .about {
+    margin-top: 85px;
+  }
+  .about h1 {
+    color: #683ee6;
+    font-family: Poppins;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  
+  .abtsec p {
+    background: #e2e6ff;
+    width: 1149px;
+    height: 550px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: thin;
+    font-weight: 300;
+    line-height: 36.2px; /* 150.833% */
+    text-align: left;
+  }
+  
+  .contact {
+    margin-top: 100px;
+    display: flex;
+    width: 100vw;
+    height: 327px;
+    background: rgba(56, 29, 191, 0.9);
+  }
+  .leftlog {
+    background: transparent;
+    align-self: center;
+    margin-left: 40px;
+    color: var(--Neutral-Silver, #F5F7FA);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .leftlog img {
+    background: transparent;
+    padding-bottom: 7px;
+  }
+  .social {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    gap: 20px;
+  }
+  .socialimg{background: transparent;}
+  .socialimg img{
+    background: transparent;
+  }
+  .right {
+    background: transparent;
+    align-self: center;
+    margin-left: 250px;
+  }
+  .sutd {
+    background: transparent;
+    color: var(--Neutral-White, #FFF);
+    font-family: Inter;
+    font-size: 23.261px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32.565px; /* 140% */
+  }
+  .form {
+    margin-top: 30px;
+    background: transparent;
+  }
+  
+  form {
+    align-items: center;
+    background: transparent;
+  }
+  
+  label {
+    display: none; /* Hide the label */
+  }
+  
+  input {
+    width: 250px;
+    padding: 10px;
+    border: 0px solid #683ee6;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #4d4d4d; /* Change border color on focus */
+  }
+  
+  input[type="submit"] {
+    background: #683ee6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  input[type="submit"] img {
+    margin-left: 5px;
+  }
+  .logoright img {
+    background: transparent;
+  }
+  .subscribe {
+    background: transparent;
+    margin-top: 10px;
+  }
+  
+</style>  
+  <body>
+    <div class="navbar">
+      <div class="logoleft">
+        <img src="public/images/frame.svg" /><img
+          class="img2"
+          src="public/images/icon-0.svg"
+        />
+      </div>
+      <div class="rightcon">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="">Login</a></li>
+          <li><a href="#bookscat">Buy books</a></li>
+          <li><a href="#concat">Contact us</a></li>
+          <li>
+            <button class="btn1">
+              sell
+              <img
+                class="arrow"
+                src="public/images/arrows-directions-down.svg"
+              />
+            </button>
+          </li>
+          <li><img src="public/images/uswds-components.svg" /></li>
+        </ul>
+      </div>
+    </div>
+    <div class="home" id="home">
+      <div class="dis">
+        <div class="discover">
+          <h1>Discover</h1>
+          <p>Great books at affordable price</p>
+        </div>
+        <button class="btn2">shop</button>
+      </div>
+    </div>
+    <div class="bookscat1" id="bookscat">
+      <h1>Categories</h1>
+      <div class="bookscat">
+        <div class="concat">
+          <img src="public/images/rectangle-8.png" alt="" />
+          <p>College books</p>
+        </div>
+        <div class="concat">
+          <img src="public/images/rectangle-9.svg" alt="" />
+          <p>Exam books</p>
+        </div>
+        <div class="concat">
+          <img src="public/images/rectangle-10.svg" alt="" />
+          <p>Reading books</p>
+        </div>
+        <div class="concat">
+          <img src="public/images/rectangle-11.png" alt="" />
+          <p>all books</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <h1>About</h1>
+      <div class="abtsec">
+        <p>
+          Welcome to BooKART, where the world of literature unfolds in
+          second-hand splendor! I'm [Your Name], the avid reader and dreamer
+          behind this enchanting space dedicated to the joy of rediscovering
+          timeless tales. BooKART is more than just a bookstore; it's a canvas
+          where stories come to life, and each book tells a unique narrative
+          waiting to be embraced by a new reader. As an ardent book lover, I've
+          carefully curated our collection to offer you a diverse range of
+          literary wonders, from classics to hidden gems, and everything in
+          between. Our virtual shelves are teeming with books that carry the
+          whispers of the past, the excitement of the present, and the promise
+          of future adventures. With BooKART, you have the opportunity to
+          explore worlds, meet characters, and immerse yourself in the magic of
+          storytelling—all within the pages of pre-loved books. What makes
+          BooKART truly special is the sense of community we aim to foster.
+          Beyond the books, we invite you to join our vibrant literary
+          community, where you can engage in discussions, participate in book
+          clubs, and share your own reading journey. Our blog, events, and
+          interactive features are designed to connect book enthusiasts,
+          creating a space where the love for literature knows no bounds. So,
+          whether you're seeking a familiar favourite, a rare find, or a new
+          adventure between the pages, BooKART welcomes you to embark on a
+          literary journey like no other. Thank you for being a part of our
+          story, and we look forward to being a part of yours.
+        </p>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <div class="leftlog">
+        <div class="leftlog">
+          <img src="public/images/frame.svg" alt="" />
+          <img src="public/images/icon-0.svg" alt="" />
+        </div>
+        <div class="leftlog">Copyright © 2024</div>
+        <div class="leftlog">All rights reserved</div>
+      </div>
+      <div class="social">
+        <div class="socialimg "><img src="public/images/social-icons1.svg" alt="" /></div>
+        <div class="socialimg "><img src="public/images/social-icons.svg" alt="" /></div>
+        <div class="socialimg "><img src="public/images/social-icons2.svg" alt="" /></div>
+        <div class="socialimg "><img src="public/images/social-icons3.svg" alt="" /></div>
+      </div>
+
+      <div class="right">
+        <div class="sutd">Stay up to date</div>
+        <div class="form">
+        <div>  <form action="" method="post"> <!-- Specify the method as post -->
+            <label for="email"></label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              required
+              placeholder="your email address"
+            /> </div>
+           <div class="subscribe"> <input type="submit" value="Subscribe" /> </div> <!-- Add the submit button -->
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
